@@ -1,12 +1,9 @@
-import { h, Component } from "preact";
+import { h, Fragment, FunctionalComponent } from "preact";
 import "./style.scss";
 
-export default class App extends Component {
-  render(props) {
-    return (
-      <div>
-        <h1 style={{ color: props.color }}>Hello, World!</h1>
-      </div>
-    );
-  }
+const App: FunctionalComponent<{ color?: string }> = (props) => {
+	return <Fragment>
+		<h1 style={{ color: props.color }}>Hello, World!</h1>
+	</Fragment>;
 }
+export default App;
