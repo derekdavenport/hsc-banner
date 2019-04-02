@@ -18,6 +18,8 @@
   "author": "Derek Davenport <derekdavenport@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "copy-webpack-plugin": "4.6.0",
     "eslint": "^4.5.0",
     "identity-obj-proxy": "^3.0.0",
     "if-env": "^1.0.4",
@@ -28,13 +30,12 @@
     "preact-cli-plugin-typescript": "^0.2.2",
     "preact-render-to-string": "^4.1.0",
     "preact-widget-scripts": "^0.6.0",
-    "sass-loader": "^7.1.0"
+    "sass-loader": "^7.1.0",
+    "typescript": "^3.4.1"
   },
   "dependencies": {
-    "@types/jest": "^24.0.11",
     "preact": "^10.0.0-alpha.2",
-    "preact-habitat": "^3.2.2",
-    "typescript": "^3.4.1"
+    "preact-habitat": "^3.2.2"
   },
   "jest": {
     "verbose": true,
