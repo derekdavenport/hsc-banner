@@ -1,0 +1,32 @@
+{
+	"rules": {
+		"no-string-throw": true,
+		"no-unused-expression": true,
+		"no-duplicate-variable": true,
+		"curly": true,
+		"class-name": true,
+		"semicolon": [
+			true,
+			"always"
+		],
+		"triple-equals": true,
+		"trailing-comma": [
+			true,
+			{
+				"multiline": "always",
+				"singleline": "never"
+			}
+		],
+		"array-type": [
+			true,
+			"array"
+		],
+		"no-consecutive-blank-lines": true,
+		"no-trailing-whitespace": true,
+		"no-var-keyword": true,
+		"prefer-const": true,
+		"prefer-readonly": true,
+		"prefer-conditional-expression": true
+	},
+	"defaultSeverity": "warning"
+}

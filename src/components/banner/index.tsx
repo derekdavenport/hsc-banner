@@ -9,7 +9,7 @@ type Item = {
 	url: string,
 	id: string,
 	normalized_type: 'image',
-}
+};
 
 type FolderListing = {
 	parent_url: string,
@@ -18,17 +18,17 @@ type FolderListing = {
 
 const prod = process.env.NODE_ENV === 'production';
 const input = prod ?
-'images/banners/tinymce-jsonimagefolderlisting' :
-'/test.json';
+	'images/banners/tinymce-jsonimagefolderlisting' :
+	'/test.json';
 const init = prod ?
-{
-	method: 'POST',
-	body: 'rooted=True&document_base_url=/',
-	headers: {
-		'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-	},
-} :
-{};
+	{
+		method: 'POST',
+		body: 'rooted=True&document_base_url=/',
+		headers: {
+			'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+		},
+	} :
+	{};
 
 const App: FunctionalComponent<{ color?: string }> = (props) => {
 	const [slides, setSlides] = useState<Item[]>([]);
@@ -40,12 +40,12 @@ const App: FunctionalComponent<{ color?: string }> = (props) => {
 				const images = folderListing.items.filter(item => item.normalized_type === 'image');
 				setSlides(images);
 			}
-		};
+		}
 		fetchImages();
 	}, []);
 
 	return <Fragment>
-		{slides.map((slide, i) => <div key={i}>{slide.title}</div>)}
+		{slides.map((slide, i) => <div key={i} style={{ color: props.color }}>{slide.title}</div>)}
 	</Fragment>;
-}
+};
 export default App;

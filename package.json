@@ -31,7 +31,9 @@
     "preact-render-to-string": "^4.1.0",
     "preact-widget-scripts": "^0.6.0",
     "sass-loader": "^7.1.0",
-    "typescript": "^3.4.1"
+    "tslint": "^5.15.0",
+    "typescript": "^3.4.1",
+    "typescript-tslint-plugin": "^0.3.1"
   },
   "dependencies": {
     "preact": "^10.0.0-alpha.2",

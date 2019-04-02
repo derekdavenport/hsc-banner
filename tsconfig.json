@@ -1,11 +1,23 @@
 {
-  "compileOnSave": false,
-  "compilerOptions": {
-    "target": "es2017",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "sourceMap": true,
-    "jsx": "react",
-    "jsxFactory": "h"
-  }
+	"compileOnSave": false,
+	"compilerOptions": {
+		"lib": [
+			"dom",
+			"dom.iterable",
+			"es2017"
+		],
+		"target": "es2017",
+		"module": "esnext",
+		"moduleResolution": "node",
+		"sourceMap": true,
+		"jsx": "react",
+		"jsxFactory": "h",
+		"strict": true,
+		"noImplicitReturns": true,
+		"noUnusedParameters": true,
+		"removeComments": true,
+		"plugins": [
+			{ "name": "typescript-tslint-plugin" }
+		],
+	},
 }

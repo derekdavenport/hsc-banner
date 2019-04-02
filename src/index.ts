@@ -1,13 +1,13 @@
-let poly = require("preact-cli/lib/lib/webpack/polyfills");
+const poly = require("preact-cli/lib/lib/webpack/polyfills");
 
 import { h } from "preact";
 import habitat from "preact-habitat";
 
 import Widget from "./components/banner";
 
-let _habitat = habitat(Widget);
+const _habitat = habitat(Widget);
 
 _habitat.render({
-  selector: '[data-widget-host="habitat"]',
-  clean: true
+	selector: '[data-widget-host="habitat"]',
+	clean: true,
 });
